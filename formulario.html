@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento, Margaret Hamilton-->
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
+    <link rel = "shortcut icon" href ="multimedia/shortcut.png" type = "image/png"/>
+	<meta name = "author" content = "Mario Lada Martínez" />
+	<meta name = "description" content = "Encuesta"/>
+	<meta name="keywords" content="Margaret Hamilton, luna, palabra clave 3"/>
+
+</head>
+<body>
+<nav>
+        
+    <a href = "index.html" tabindex = "1" acceskey = "I">  Inicio </a>
+    <a href = "trayectorialaboral.html" tabindex = "2" acceskey = "T"> Trayectorial Laboral </a>
+    <a href = "reconocimientos.html" tabindex = "3" acceskey = "P">Preguntas</a>
+
+</nav>
+
+    <form name="datos">
+        <input type="text" >Usuario/a<br>
+        <input type = "email">Correo electrónico<br>
+        <input type="date">Fecha nacimiento<br>
+        <fieldset>
+            <legend>¿Conocías a Margaret Hamilton y su colaboración con el alunizaje del Apolo?</legend>
+            <label>
+                <input type="radio" name="opcion" value="si"> Sí
+            </label>
+            <label>
+                <input type="radio" name="opcion" value="no"> No
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Margaret ha conseguido una cantidad increíble de premios por sus labores. ¿Crees que esto ha ayudado a conseguir una mayor igualdad entre el hombre y mujer en el ámbito laboral?</legend>
+            <label>
+                <input type="radio" name="opcion" value="si"> Sí
+            </label>
+            <label>
+                <input type="radio" name="opcion" value="no"> No
+            </label>
+        </fieldset>
+        <p>Cuentános que te ha parecido la información de la web</p>
+        <textarea cols="15" rows="6" ></textarea>
+        <input type="submit"
+        value="Enviar">
+        </form>
+
+</body>
+</html>
