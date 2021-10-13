@@ -7,6 +7,7 @@
     <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
     <title>Formulario</title>
 	<link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="estilos/formulario.css" />
     <link rel = "shortcut icon" href ="multimedia/shortcut.png" type = "image/png"/>
 	<meta name = "author" content = "Mario Lada Martínez" />
 	<meta name = "description" content = "Encuesta"/>
@@ -14,14 +15,18 @@
 
 </head>
 <body>
-<nav>
-        
-    <a href = "index.html" tabindex = "1" acceskey = "I">  Inicio </a>
-    <a href = "trayectorialaboral.html" tabindex = "2" acceskey = "T"> Trayectorial Laboral </a>
-    <a href = "reconocimientos.html" tabindex = "3" acceskey = "P">Preguntas</a>
-
-</nav>
-
+    <header>
+        <h1>Formulario</h1>
+      </header>
+    <nav> 
+        <ul>
+          <li><a href = "index.html" tabindex = "1" acceskey = "I"> Inicio </a></li>
+          <li><a href = "trayectorialaboral.html" tabindex = "2" acceskey = "T"> Trayectoria laboral </a></li>
+          <li> <a href = "reconocimientos.html" tabindex = "3" acceskey = "P"> Premios y reconocimientos </a></li>
+          <li> <a href = "formulario.html" tabindex = "4" acceskey = "Q"> Preguntas</a>      </li>
+        </ul>
+      </nav>
+<section>
     <form name="datos">
         <input type="text" >Usuario/a<br>
         <input type = "email">Correo electrónico<br>
@@ -51,6 +56,17 @@
         <input type="submit"
         value="Enviar">
         </form>
+    </section>
+    <!--EL contenido de la parte derecha del dibujo se va a hacer con aside, que contiene inofrmacion ligeramente relacionada con el contenido principal-->
+    <footer>   <img alt = "Uniovi" src = "multimedia/footer_uniovi.jpg"/> 
+        <img alt = "Uniovi" src = "multimedia/CSS3.png"/> 
+        <img alt = "Uniovi" src = "multimedia/HTML5.png"/> 
+        <address>
+          <p> Información de contacto:
+          <a href="mailto:UO275874@uniovi.es">
+          Mario Lada Martínez</a></p>
+          </address>
+       </footer>
 
 </body>
 </html>

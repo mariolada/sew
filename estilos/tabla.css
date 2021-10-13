@@ -1,0 +1,40 @@
+ 
+
+ /* Tabla */
+ table {
+  font-family: Georgia, 'Times New Roman', Times, serif ;
+/*Esto lo hago para aprovechar el espacio, la tabla se expandira al 100% del ancho*/
+width: 100%;
+/*Bordes externos*/
+border: 1px solid #000;
+/*Color de fgondo de la tabla*/
+background-color: rgb(255, 255, 255);
+/*Color texto de las celdas*/
+color: rgb(0, 0, 0);
+}
+th, td {
+  /*La anchura de las celdas sera del 33% porque hay 3 columnas*/
+  width: 33%;
+  /*Alineamos a la izquierda*/
+  text-align: left;
+  /*Alineado en el centro*/
+  vertical-align: center;
+  /*Bordes internos*/
+  border: 1px solid rgb(255, 0, 0);
+  /*Con esto elimino el espacio que hay entre los bordes*/
+  border-spacing: 0;
+  /*Con esto consigo el efecto de borde de 1px, antes aunque estuvieran juntos era como uno de 2px*/
+  border-collapse: collapse;
+/*Añado espacio a los bordes de las celdas*/
+  padding:0.3em;
+  
+  background-color: white;
+  color: black;
+  
+}
+/*El titulo de la tabla*/
+caption{
+padding: 0.4em;
+color: #fff;
+background: #000;
+}

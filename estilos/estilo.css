@@ -1,8 +1,4 @@
-ubody {
-  font-family: 'Times New Roman', Times, serif;
-  color: #ffffff;
-  background-color: rgb(0, 255, 213);
-  }
+
 /*Headers*/
  h1 {
   font-family :'Courier New', Courier, monospace;
@@ -12,150 +8,124 @@ ubody {
   padding: 2em; 
   text-align: center;     
   }
+  figure>figcaption {
+    font-family :'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: brown;
+    text-align: center;
+  }
 
-  main > section:first-of-type> h2 {
+  body > section:first-of-type> h2 {
     color: rgb(255, 153, 0);   
     font-family :'Courier New', Courier, monospace; 
     font-weight: bold;
     text-transform: uppercase;
     padding: 2em; 
     text-align: left;   
+    font-size: 1.7em;  
   }
   video{
     max-width: 100%;
     height: auto;
   }
   figure {
-    float: right;
+
     max-width: 100%;
     height: auto;
+  }
+  figure>video,img,audio {
+    display: block;
+margin-left: auto;
+margin-right: auto;
   }
   img {
-    float: right;
     max-width: 100%;
     height: auto;
   }
-  main > section:last-of-type> h2 {
+  body > section:last-of-type> h2 {
     color: rgb(140, 0, 255);   
     font-family :'Courier New', Courier, monospace; 
     font-weight: bold;
     text-transform: uppercase;
     padding: 2em; 
-    text-align: left;   
-  }
-  main > section:last-of-type> img {
-  float:right;
+    text-align: left; 
+    font-size: 1.7em;  
   }
 
-  main > section:first-of-type>  h3 {
-    font-family :'Courier New', Courier, monospace;
-    color:  rgb(255, 0, 0);   
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 2em; 
-    text-align: left; 
-  }
+
+
   p  {
     font-family:'Courier New', Courier, monospace;
       color:rgb(0, 0, 0);
+      font-size: 1.2em;
+      padding-left: 1em;
+      padding-right: 1em;
   }
 
-  aside:first-of-type > h2 {
-   padding-top: 3em; 
-    float: center;
+  aside > h2 {
+   padding-top: 1em; 
     font-family :'Courier New', Courier, monospace;
-    font-size: 1.1em;
+    font-size: 1.4em;
     color:  rgb(255, 0, 0);   
-    text-align: left; 
-    padding-right: 5em;
+    text-align: center; 
+    padding-right: 2em;
   }
-  aside:first-of-type > p {
-    padding-top: 1em; 
-     float: left;
+  aside > p {
      font-family :'Courier New', Courier, monospace;
      font-size: 1.1em;
      color:  rgb(0, 0, 0);   
      text-align: justify; 
    }
 /*Lista*/
-ul {
+body>nav>ul {
   list-style-type: circle;
+  color: rgb(0, 0, 0);
+    background-color: rgb(190, 237, 255);
 }
 li {
-    color: rgb(0, 0, 0);
-    background-color: cornflowerblue;
+  font-family: monospace;
+  font-size: 1.1em;
 }
+body>section>ul {
+  list-style-type: georgian;
+  color: rgb(255, 255, 255);  
+    background-color: rgb(8, 0, 43);
+}
+
  
 
   /*Enlaces*/
-  a {
+ body > nav > ul > li> a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
     outline: none;
     text-decoration: dashed;
-    padding: 2px 1px 0;
+
+ 
   }
   
   a:link {
-    color: rgb(17, 0, 255);
+    color: rgb(76, 64, 255);
   }
-  
+  a:hover {
+    color:rgb(0, 141, 87);
+  }
   a:visited {
-    color: rgb(13, 0, 88);
+    color:rgb(0, 0, 128);
   }
+
   
-  a:focus {
-    border-bottom: 1px solid;
-    background: rgb(0, 4, 255);
-  }
+
     /* Bordes y margenes */
 
+    body > footer > p> a{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1em;
 
-    /* Formulario */
-    *{box-sizing:border-box;}
-
-    form{
-      width:300px;
-      padding:16px;
-      border-radius:10px;
-      margin:auto;
-      background-color:#ccc;
     }
-    
+    body > footer {
+      background-color: aquamarine;
+    }
+
   
-    
-    form input[type="text"],
-    form input[type="email"]{
-      width:180px;
-      padding:3px 10px;
-      border:1px solid #f6f6f6;
-      border-radius:3px;
-      background-color:#f6f6f6;
-      margin:8px 0;
-      display:inline-block;
-    }
-    
-    form input[type="submit"]{
-      width:100%;
-      padding:8px 16px;
-      margin-top:32px;
-      border:1px solid #000;
-      border-radius:5px;
-      display:block;
-      color:#fff;
-      background-color:#000;
-    } 
-    
-    form input[type="submit"]:hover{
-      cursor:pointer;
-    }
-    
-    textarea{
-      width:100%;
-      height:100px;
-      border:1px solid #f6f6f6;
-      border-radius:3px;
-      background-color:#f6f6f6;			
-      margin:8px 0;
-      /*resize: vertical | horizontal | none | both*/
-      resize:none;
-      display:block;
-    }

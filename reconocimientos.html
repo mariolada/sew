@@ -5,7 +5,9 @@
     <!-- Datos que describen el documento, Margaret Hamilton-->
     <meta charset="UTF-8" />
     <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estilos/layout.css" />
 	<link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="estilos/tabla.css" />
     <link rel = "shortcut icon" href ="multimedia/shortcut.png" type = "image/png"/>
     <title>Reconocimientos de Margaret Hamilton</title>
 	<meta name = "author" content = "Mario Lada Martínez" />
@@ -13,16 +15,21 @@
 	<meta name="keywords" content="Margaret Hamilton, luna, apollo"/>
 
 </head>
+<header>
+    <h1>Reconocimientos y premios de Margaret Hamilton</h1>
+  </header>
 <body>
-<nav>
-        
-    <a href = "index.html" tabindex = "1" acceskey = "I">  Inicio </a>
-    <a href = "trayectorialaboral.html" tabindex = "2" acceskey = "T"> Trayectoria Laboral </a>
-   <a href = "formulario.html" tabindex = "3" acceskey = "Q">Preguntas</a>
+    <nav> 
+        <ul>
+          <li><a href = "index.html" tabindex = "1" acceskey = "I"> Inicio </a></li>
+          <li><a href = "trayectorialaboral.html" tabindex = "2" acceskey = "T"> Trayectoria laboral </a></li>
+          <li> <a href = "reconocimientos.html" tabindex = "3" acceskey = "P"> Premios y reconocimientos </a></li>
+          <li> <a href = "formulario.html" tabindex = "4" acceskey = "Q"> Preguntas</a>      </li>
+        </ul>
+      </nav>
 
-</nav>
-
-<img src="multimedia/alunizaje.jpg" alt = "alunizaje"  >
+<section>
+    <h2>Los premios de Margaret Hamilton y sus motivos</h2>
     <p> A continuación, una tabla con los premios y reconocimientos que Margaret Hamilton ha conseguido a lo largo de su vida.</p>
     <table>
         <caption>Reconocimientos y premios de Margaret Hamilton</caption>
@@ -63,11 +70,41 @@
         <td> Es investida honoris causa por la Universidad Politécnica de Catalunya. Es un título honorífico que da una universidad o asociación profesional a personas eminentes</td>
     </tr>
     </table>
-    <p>Entrevista a Margaret Hamilton, ¿qué pensó le ofrecieron trabajar en el viaje a la Luna?</p>
-    <video width="500" controls>
+</section>
+<section>
+<h2>¿Qué llevó a Margaret Hamilton a este éxito?</h2>
+<p>Sin duda Margaret Hamilton fue brillante desde sus inicios, estamos hablando de la madre de la Ingeniería del Software, pero es curioso como en un principio no tenía pensado dedicarse a la programación.
+    Ella afirma que comenzó a trbajar de programadora porque el sueldo de profesora asociada no daba para sustentar a su familia. Esta necesidad fue lo que dio a luz a una de las más prodigiosas ingenieras
+    de la historia. Comenzó con sus estudios de informática y se metió de lleno en el mundillo con Lorentz, el creador de la teoría del caos, que pretendía crear una máquina para prever el tiempo.
+</p>
+</section>
+<aside>
+    <h2>La Medalla Presidencial de la Libertad</h2>
+    <p>¿Sabías que la Medalla Presidencial de la Libertad es la concesión más grande que puede tener un civil en Estados Unidos? Es una condecoración otorgada por el propio presidente
+        por una contribución especialmente meritoria a los intereses nacionales de los Estados Unidos. También puede ser concedidad a militares y fue establecida por Harry Truman en 1945
+        para honrar el servicio durante la segunda guerra mundial.   </p>
+</aside>
+<figure>
+    <img src="multimedia/alunizaje.jpg" alt = "alunizaje"  />
+    <figcaption>Alunizaje del Apolo 11</figcaption>
+</figure>
+    <figure> 
+    <video  controls>
         <source src="multimedia/mhinterview.mp4" type="video/mp4">
       Your browser does not support the video tag.
       </video>
+      <figcaption>Entrevista a Margaret Hamilton, ¿qué pensó cuando le ofrecieron trabajar en el viaje a la Luna?</figcaption>
+    </figure> 
+    <!--EL contenido de la parte derecha del dibujo se va a hacer con aside, que contiene inofrmacion ligeramente relacionada con el contenido principal-->
+    <footer>   <img alt = "Uniovi" src = "multimedia/footer_uniovi.jpg"/> 
+        <img alt = "Uniovi" src = "multimedia/CSS3.png"/> 
+        <img alt = "Uniovi" src = "multimedia/HTML5.png"/> 
+        <address>
+          <p> Información de contacto:
+          <a href="mailto:UO275874@uniovi.es">
+          Mario Lada Martínez</a></p>
+          </address>
+       </footer>
 
 </body>
 </html>

@@ -4,10 +4,11 @@
 <head>
     <!-- Datos que describen el documento, Margaret Hamilton-->
      <!-- flexbox, grid... CSS tricks (Flexbox o grid son lo mejor, float es malo), W3 school-->
-     <!--adaptabilidad y accesibuilad de html, comprobar-->
+     <!--adaptabilidad y accesibuilad de html, comprobar, el menu es igualo siempre, se pone la propia pagina en la que estoy-->
     <meta charset="UTF-8" />
     <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
     <title>Margaret Hamilton, "La primera ingeniera del Software"</title>
+	<link rel="stylesheet" type="text/css" href="estilos/layout.css" />
 	<link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
     <link rel = "shortcut icon" href ="multimedia/shortcut.png" type = "image/png"/>
 	<meta name = "author" content = "Mario Lada Martínez" />
@@ -17,62 +18,75 @@
 </head>
 
 <body>
+  <header>
+    <h1>Margaret Hamilton, "La primera ingeniera del Software"</h1>
+  </header>
     <nav> 
-        <a href = "trayectorialaboral.html" tabindex = "1" acceskey = "T"> Trayectoria laboral </a>
-        <a href = "reconocimientos.html" tabindex = "2" acceskey = "P"> Premios y reconocimientos </a>
-        <a href = "formulario.html" tabindex = "3" acceskey = "Q"> Preguntas</a>      
+      <ul>
+        <li><a href = "index.html" tabindex = "1" acceskey = "I"> Inicio </a></li>
+        <li><a href = "trayectorialaboral.html" tabindex = "2" acceskey = "T"> Trayectoria laboral </a></li>
+        <li> <a href = "reconocimientos.html" tabindex = "3" acceskey = "P"> Premios y reconocimientos </a></li>
+        <li> <a href = "formulario.html" tabindex = "4" acceskey = "Q"> Preguntas</a>      </li>
+      </ul>
     </nav>
-    <!-- Datos con el contenidos que aparece en el navegador -->
-    <main>
-    <h1>Margaret Hamilton, "La primera ingeniera del Sofware"</h1>
+
+    <!-- Datos con el contenidos que aparec e en el navegador -->
+ 
+    
     
     
     <section>
     <h2>Biografía: </h2>
-    <figure>
-
-        <img alt = "Margaret Hamilton en su trabajo" src = "multimedia/margarethamilton.jpg">
-      
-        <figcaption>Margaret Hamilton en su trabajo</figcaption>
-      
-      </figure>
+    
     <p>Margaret Hamilton nació el 17 de agosto de 1937 en Paoli, Indiana, Estados Unidos. Comenzó sus estudios de matemáticas en la Universidad de Míchigan y posteriormente se trasladó al Earlham College, donde se licenció en Matemáticas (con diplomatura en Filosofía) en 1958. Incansable, su deseo era seguir estudiando, pero desgraciadamente, tuvo que dejar sus estudios para trabajar como profesora de matemáticas y francés en un instituto para que su marido pudiera acabar su carrera en Harvard.<br>
          Posteriormente, y siguiendo su sueño, se mudó a Boston para estudiar matemáticas abstractas en la Universidad Brandeis.
         La vida de Hamilton empezó a cambiar en 1960, cuando entró a trabajar en el Departamento de Meteorología del Instituto Tecnológico de Massachusetts (MIT), bajo las órdenes del profesor Edward Norton Lorenz. Gracias a sus conocimientos en matemática, a las lecciones del profesor y el gran esfuerzo que realizó para aprender varios lenguajes de programación por sí misma, fue una de las encargadas en diseñar el software que permitía predecir el tiempo utilizando los ordenadores LGP-30 y PDP-1. <br>
         Posteriormente se involucró en el proyecto SAGE, un proyecto del Laboratorio Lincon del MIT desarrollado entre 1961 y 1963 que, aunque nació como un proyecto de predicción del clima, rápidamente pasó a ser un proyecto militar. En aquel proyecto, Margaret fue la encargada de desarrollar el software para el primer ordenador AN/FSQ-7 que buscaba aviones “no-amigos” en el espacio aéreo norteamericano.
         El gran éxito de esta misión militar permitió que Hamilton se pudiera unir al Laboratorio Charles Stark Draper del MIT. En aquel momento, esta unidad estaba trabajando en lo que definitivamente cambiaría la vida de Margaret: el Programa Apolo. Con unos conocimientos en programación extraordinarios, Margaret pronto destacó. Fue la encargada, junto con su equipo, de diseñar parte del software que hacía funcionar el Módulo de Mando y el Módulo Lunar, y probablemente, la persona que evitó el fracaso de la misión. Minutos antes de que el módulo Lunar alunizara, hubo un fallo que hizo saltar todas las alarmas. Gracias a que el software estaba diseñado para priorizar funciones imprescindibles y descartar los que no lo eran mediante la detección precoz de errores, se evitó una sobrecarga en el sistema. Según sus propias palabras “Si el ordenador no se hubiera diseñado para recuperar errores, dudo que el Apolo hubiera aterrizado en la Luna”. Pero lo hizo. Aprovechando los conocimientos adquiridos en la detección de errores, en 1976 cofundó la empresa Higher Order Software (HOS). Posteriormente, en 1986 creó Hamilton Technologies, también dirigido a la prevención de errores de software.
          </p>
-        
-        <h3> La vida de Margaret Hamilton en 2 minutos</h3>
-        <video controls>
-            <source src="multimedia/vidamh.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
+       
         </section>
        
         <section>
           <h2> Negocios de Margaret Hamilton</h2>
-          <figure style="float: right">
-
-            <img alt = "Margaret Hamilton MIT" src = "multimedia/mhmit.jpg">
-          
-            <figcaption>Margaret Hamilton en su trabajo</figcaption>
-          
-          </figure>
           <p>
           En 1976, Hamilton cofundó con Saydean Zeldin una empresa llamada Higher Order Software (HOS) para desarrollar más ideas sobre la prevención de errores y la tolerancia a fallos que surgen de su experiencia en el MIT trabajando en el programa Apollo. Crearon un producto llamado USE.IT, basado en la metodología HOS que desarrollaron en el MIT. Se utilizó con éxito en numerosos programas gubernamentales, incluido un proyecto para formalizar e implementar C-IDEF, una versión automatizada de IDEF, un lenguaje de modelado desarrollado por la Fuerza Aérea de EE. UU. En la Fabricación Asistida por Computadora Integrada (ICAM) proyecto.
 Hamilton fue la directora ejecutiva de HOS hasta 1984 y dejó la empresa en 1985. En marzo de 1986, fundó Hamilton Technologies, Inc. en Cambridge, Massachusetts. La empresa se desarrolló en torno al lenguaje de sistemas universal (USL) y su entorno automatizado asociado, el conjunto de herramientas 001, basado en su paradigma de desarrollo antes hecho para el diseño de sistemas y desarrollo de software. </p>
 </section>
 <aside>
-  <h2>Bienvenido a mi web</h2>
-  <p>Hola, soy Mario Lada Martínez, el creador de esta web. <br>
-    Me encantaría que cuando terminarás de ver la información <br>
-    rellenaras el Formulario para saber tus opiniones. ¡Un saludo!. </p>
+  <h2>Origen de la Ingeniería del Software</h2>
+  <p>Muchas personas sugieren que fue Friedrich Bauer quien acuñó este término en la conferencia de ingeniería de software de la OTAN en 1968, otros creen que fue Anthony Oettinger, el cual usó este término en 1966 para hacer referencia a la distinción entre ciencias de la computación y el desarrollo de sistemas intensivos de software. Sin embargo, años atrás, en la edición de junio de 1965 de la revista 'Computers and Automation', apareció un anuncio de trabajo buscando un "ingeniero de sistemas de software".<br><br>
+
+    Pero no fueron ninguno de los anteriores, Grady Booch sostiene que todos sus datos apuntan a que Margaret Hamilton usó por primera vez el término 'ingenieria de software' para distinguir su trabajo de la ingeniería de hardware mientras trabajaba en un programa espacial, el famoso proyecto Apollo y el Skylab, entre 1963 y 1964.  
   </aside>
-</main>
+<figure>
+
+  <img alt = "Margaret Hamilton en su trabajo" src = "multimedia/margarethamilton.jpg">
+
+  <figcaption>Margaret Hamilton en su trabajo</figcaption>
+
+</figure>
+
+<figure>
+<video controls>
+  
+  <source src="multimedia/vidamh.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<figcaption>La vida de Margaret Hamilton en 2 minutos</figcaption>
+</figure>
+
 
 <!--EL contenido de la parte derecha del dibujo se va a hacer con aside, que contiene inofrmacion ligeramente relacionada con el contenido principal-->
-            <footer> <!--Links a reds¡es, deechos de autor, avisos de privacidad, contacto-->  </footer>
+            <footer>   <img alt = "Uniovi" src = "multimedia/footer_uniovi.jpg"/> 
+              <img alt = "Uniovi" src = "multimedia/CSS3.png"/> 
+              <img alt = "Uniovi" src = "multimedia/HTML5.png"/> 
+              <address>
+                <p> Información de contacto:
+                <a href="mailto:UO275874@uniovi.es">
+                Mario Lada Martínez</a></p>
+                </address>
+             </footer>
 
 </body>
 </html>
