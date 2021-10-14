@@ -1,15 +1,18 @@
-
+body {
+  background-color: white;
+}
 /*Headers*/
  h1 {
   font-family :'Courier New', Courier, monospace;
   color: rgb(255, 51, 0);    
+
   font-weight: bold;
   text-transform: uppercase;
   padding: 2em; 
   text-align: center;     
   }
   figure>figcaption {
-    font-family :'Courier New', Courier, monospace;
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: 1.3em;
     color: brown;
@@ -17,7 +20,7 @@
   }
 
   body > section:first-of-type> h2 {
-    color: rgb(255, 153, 0);   
+    color: rgb(124, 75, 0);   
     font-family :'Courier New', Courier, monospace; 
     font-weight: bold;
     text-transform: uppercase;
