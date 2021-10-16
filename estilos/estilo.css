@@ -2,6 +2,7 @@ body {
   background-color: white;
 }
 /*Headers*/
+/*Especifidad 001*/
  h1 {
   font-family :'Courier New', Courier, monospace;
   color: rgb(255, 51, 0);    
@@ -11,6 +12,7 @@ body {
   padding: 2em; 
   text-align: center;     
   }
+  /*Especifidad 002*/
   figure>figcaption {
     font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
@@ -19,6 +21,7 @@ body {
     text-align: center;
   }
 
+  /*Especifidad 013*/
   body > section:first-of-type> h2 {
     color: rgb(124, 75, 0);   
     font-family :'Courier New', Courier, monospace; 
@@ -28,24 +31,23 @@ body {
     text-align: left;   
     font-size: 1.7em;  
   }
-  video{
-    max-width: 100%;
-    height: auto;
-  }
-  figure {
+
+
+
+  /*Especifidad 001*/
+  figure,video,img {
 
     max-width: 100%;
     height: auto;
   }
+  /*Especifidad 002*/
   figure>video,img,audio {
     display: block;
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+
+  /*Especifidad 013*/
   body > section:last-of-type> h2 {
     color: rgb(140, 0, 255);   
     font-family :'Courier New', Courier, monospace; 
@@ -57,7 +59,7 @@ margin-right: auto;
   }
 
 
-
+/*Especifidad 001*/
   p  {
     font-family:'Courier New', Courier, monospace;
       color:rgb(0, 0, 0);
@@ -66,6 +68,7 @@ margin-right: auto;
       padding-right: 1em;
   }
 
+/*Especifidad 002*/
   aside > h2 {
    padding-top: 1em; 
     font-family :'Courier New', Courier, monospace;
@@ -74,6 +77,8 @@ margin-right: auto;
     text-align: center; 
     padding-right: 2em;
   }
+
+  /*Especifidad 002*/
   aside > p {
      font-family :'Courier New', Courier, monospace;
      font-size: 1.1em;
@@ -81,15 +86,20 @@ margin-right: auto;
 
    }
 /*Lista*/
+/*Especifidad 003*/
 body>nav>ul {
   list-style-type: circle;
   color: rgb(0, 0, 0);
     background-color: rgb(190, 237, 255);
 }
+
+/*Especifidad 001*/
 li {
   font-family: monospace;
   font-size: 1.1em;
 }
+
+/*Especifidad 003*/
 body>section>ul {
   list-style-type: georgian;
   color: rgb(255, 255, 255);  
@@ -99,6 +109,8 @@ body>section>ul {
  
 
   /*Enlaces*/
+
+  /*Especifidad 005*/
  body > nav > ul > li> a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2em;
@@ -108,12 +120,15 @@ body>section>ul {
  
   }
   
+  /*Especifidad 011*/
   a:link {
     color: rgb(76, 64, 255);
   }
+  /*Especifidad 011*/
   a:hover {
     color:rgb(0, 141, 87);
   }
+  /*Especifidad 011*/
   a:visited {
     color:rgb(0, 0, 128);
   }
@@ -122,11 +137,14 @@ body>section>ul {
 
     /* Bordes y margenes */
 
+    /*Especifidad 004*/
     body > footer > p> a{
       font-family: 'Times New Roman', Times, serif;
       font-size: 1em;
 
     }
+
+    /*Especifidad 002*/
     body > footer {
       background-color: aquamarine;
     }
