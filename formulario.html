@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
     <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="estilos/layoutForm.css" />
 	<link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
 	<link rel="stylesheet" type="text/css" href="estilos/formulario.css" />
     <link rel = "shortcut icon" href ="multimedia/shortcut.png" type = "image/png"/>
@@ -29,9 +30,6 @@
 <section>
     <h2>Preguntas sobre Margaret Hamilton</h2>
 
-    <label for="num">Numero:</label> 
-    <input id="num" type="number" />
-
     <form name="datos">
         <label for="usu">Usuario:</label> 
         <input id = "usu" type="text"/>
@@ -44,32 +42,28 @@
         
         <fieldset>
             <legend>¿Conocías a Margaret Hamilton y su colaboración con el alunizaje del Apolo?</legend>
-            <label>
-                <input type="radio" name="opcion" value="si"> Sí
-            </label>
-            <label>
-                <input type="radio" name="opcion" value="no"> No
-            </label>
+                <label for = "rad1"></label>
+                <input id = "rad1" type="radio" name="opcion" value="si"> Sí
+                <label for = "rad2"></label>
+                <input id = "rad2" type="radio" name="opcion" value="no"> No
         </fieldset>
 
 
         <fieldset>
             <legend>Margaret ha conseguido una cantidad increíble de premios por sus labores. ¿Crees que esto ha ayudado a conseguir una mayor igualdad entre el hombre y mujer en el ámbito laboral?</legend>
-            <label>
-                <input type="radio" name="opcion" value="si"> Sí
-            </label>
-            <label>
-                <input type="radio" name="opcion" value="no"> No
-            </label>
+                <label for = "rad3"></label>
+                <input id = "rad3" type="radio" name="opcion" value="si">Sí
+                <label for = "rad4"></label>
+                <input i = "rad4" type="radio" name="opcion" value="no"> No
         </fieldset>
         <p>Cuentános que te ha parecido la información de la web</p>
-    <label>
-        <p><textarea name="comentario" rows="5" cols="15">Escribe aquí tu comentario: </textarea></p>
-    </label>
+            <label for = "comentario">Escribe aquí tu comentario</label>
+            <textarea id="comentario" name = "comment" rows="5" cols="15"></textarea>
         <input type="submit"
         value="Enviar">
         </form>
     </section>
+
     <!--EL contenido de la parte derecha del dibujo se va a hacer con aside, que contiene inofrmacion ligeramente relacionada con el contenido principal-->
     <footer>   <img alt = "Uniovi" src = "multimedia/footer_uniovi.jpg"/> 
         <img alt = "CSS3" src = "multimedia/CSS3.png"/> 
