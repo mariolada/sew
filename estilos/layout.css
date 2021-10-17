@@ -1,4 +1,5 @@
 /*contenedor*/
+/*Especifidad 001*/
 body {
   display: grid;
   grid-gap:1.2em;
@@ -6,12 +7,16 @@ body {
   grid-template-rows:repeat(5,auto);
 
 }
+
+/*Especifidad 002*/
 body>header {
 
   grid-column-start: 1;
   grid-column-end: 4;
 
 }
+
+/*Especifidad 002*/
 body>nav {
 
 
@@ -25,6 +30,8 @@ body>nav {
   
   
 }
+
+/*Especifidad 012*/
 body>section:first-of-type {
 
 
@@ -33,12 +40,16 @@ body>section:first-of-type {
 
 
 }
+
+/*Especifidad 012*/
 body>section:last-of-type {
 
   grid-column-start: 1;
   grid-column-end: 3;
   
 }
+
+/*Especifidad 002*/
 body>aside {
 
   grid-column-start: 3;
@@ -48,6 +59,8 @@ body>aside {
   grid-row-end: 4;
   
 }
+
+/*Especifidad 012*/
 body>figure:first-of-type {
 
 
@@ -59,6 +72,8 @@ body>figure:first-of-type {
 
 
 }
+
+/*Especifidad 012*/
 body>figure:last-of-type {
 
   grid-column-start: 2;
@@ -69,9 +84,11 @@ body>figure:last-of-type {
 
 }
 
+
+/*Especifidad 002*/
 body>footer {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(5,1fr);
   justify-content: center;
   align-items: center;
 

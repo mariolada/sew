@@ -88,21 +88,20 @@ body {
 /*Lista*/
 /*Especifidad 003*/
 body>nav>ul {
+
   list-style-type: circle;
   color: rgb(0, 0, 0);
-    background-color: rgb(190, 237, 255);
+    background-color: rgb(214, 255, 205);
 }
 
-/*Especifidad 001*/
-li {
-  font-family: monospace;
-  font-size: 1.1em;
-}
+
 
 /*Especifidad 003*/
 body>section>ul {
   list-style-type: georgian;
   color: rgb(255, 255, 255);  
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
     background-color: rgb(8, 0, 43);
 }
 
@@ -113,40 +112,42 @@ body>section>ul {
   /*Especifidad 005*/
  body > nav > ul > li> a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2em;
-    outline: none;
-    text-decoration: dashed;
+    font-size: 1.3em;
 
- 
   }
   
-  /*Especifidad 011*/
-  a:link {
-    color: rgb(76, 64, 255);
-  }
-  /*Especifidad 011*/
-  a:hover {
-    color:rgb(0, 141, 87);
-  }
-  /*Especifidad 011*/
-  a:visited {
-    color:rgb(0, 0, 128);
-  }
 
   
 
     /* Bordes y margenes */
 
+    /*Especifidad 005*/
+    body > footer > address >p> a{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1em;
+
+    }
     /*Especifidad 004*/
-    body > footer > p> a{
+    body > footer > address> p{
       font-family: 'Times New Roman', Times, serif;
       font-size: 1em;
 
     }
 
+    /*Especifidad */
+    body>footer>p {
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      font-size: 1em;
+    }
+
     /*Especifidad 002*/
     body > footer {
       background-color: aquamarine;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      font-size: 1em;
+      color: black;
     }
 
   

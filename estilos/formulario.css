@@ -1,5 +1,5 @@
   /* Formulario */
-
+/*Especifidad 000*/
   *{box-sizing:border-box;}
 
   /*Especifidad 001*/
@@ -9,9 +9,12 @@
     border-radius:2em;
     margin:auto;
     background-color:#ccc;
+    color: black;
     text-align: center;
   }
 
+
+  /*Especifidad 001*/
   label {
     font-family:'Courier New', Courier, monospace;
     font-size: 1.3em;
@@ -19,15 +22,19 @@
     color: rgb(131, 0, 0);
   }
 
+
+  /*Especifidad 001*/
   legend {
     font-family:'Courier New', Courier, monospace;
     font-size: 1.3em;
     font-style: italic;
     color:  rgb(131, 0, 0);
   }
+
+
   
 
-  /*Especifidad 001*/
+  /*Especifidad 012*/
   form input[type="text"],
   form input[type="email"],
   form input[type="date"]{
@@ -67,3 +74,65 @@
     margin:1em 0;
 
   }
+  /*contenedor*/
+  /*Especifidad 001*/
+body {
+  display: grid;
+  grid-gap:1.2em;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows:repeat(3,auto);
+
+}
+
+/*Especifidad 002*/
+body>header {
+grid-column-start:1 ;
+grid-column-end:3 ;
+
+
+}
+
+/*Especifidad 002*/
+body>nav {
+  grid-column-start:2 ;
+  grid-column-end:3 ;
+
+  grid-row-start:2 ;
+grid-row-end:3 ;
+
+
+
+  vertical-align: middle;
+  
+}
+
+/*Especifidad 002*/
+body>section{
+  grid-column-start:1 ;
+  grid-column-end:2 ;
+
+  grid-row-start:2 ;
+  grid-row-end:3 ;
+    
+
+
+}
+
+
+/*Especifidad 002*/
+body>footer {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: center;
+  align-items: center;
+
+  grid-column-start:1 ;
+  grid-column-end:3 ;
+
+  grid-row-start:3 ;
+  grid-row-end:4 ;
+
+
+}
+
+
