@@ -81,7 +81,7 @@ body {
   /*Especifidad 002*/
   aside > p {
      font-family :'Courier New', Courier, monospace;
-     font-size: 1.1em;
+     font-size: 1.2em;
      color:  rgb(0, 0, 0);   
 
    }
@@ -101,8 +101,10 @@ body>section>ul {
   list-style-type: georgian;
   color: rgb(255, 255, 255);  
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1em;
+  font-size: 1.2em;
     background-color: rgb(8, 0, 43);
+    padding-bottom: 1em;
+
 }
 
  
@@ -111,10 +113,16 @@ body>section>ul {
 
   /*Especifidad 005*/
  body > nav > ul > li> a {
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
 
   }
+  body > nav > ul > li {
+
+    margin-bottom: 1em;
+  }
+  
   
 
   
