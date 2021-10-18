@@ -37,16 +37,22 @@
   /*Especifidad 012*/
   form input[type="text"],
   form input[type="email"],
-  form input[type="date"]{
+  form input[type="date"]
+  {
     font-size: 1.3em;
     color:rgb(0, 0, 0);
     width:60%;
     border:1em solid #f6f6f6;
-    border-radius:3px;
+    border-radius:0.2em;
     background-color:#f6f6f6;
     margin:2em 0;
     display:inline-block;
 
+  }
+  /*Especificidad 012*/
+  form input[type="checkbox"] {
+    font-size: 1em;
+    margin-bottom: 1em;
   }
   
   /*Especifidad 012*/
@@ -54,8 +60,8 @@
     width:100%;
     padding:2em 4em;
     margin-top:6em;
-    border:1px solid #000;
-    border-radius:5px;
+    border:0.1em solid #000;
+    border-radius:1em;
     display:block;
     color:#fff;
     background-color:#000;
